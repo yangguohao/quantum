@@ -13,7 +13,7 @@
 
 通常使用 狄拉克标记 (也称作bra-ket标记)表示量子比特。bra代表行向量，用<|表示，ket代表列向量，用|>表示。如下图所示
 
-![](https://ai-studio-static-online.cdn.bcebos.com/a830b98690f84223b6c63c60af93d927be8096778086439798c65e2424834cdc)
+![image](https://ai-studio-static-online.cdn.bcebos.com/a830b98690f84223b6c63c60af93d927be8096778086439798c65e2424834cdc)
 
 
 
@@ -23,7 +23,7 @@ $|φ> = a|0>+b|1>$其中a和b都是复数，满足关系$|a|^2+|b|^2=1$
 
 上式也可以写成$|φ> = cos\frac{θ}2|0>+e^{iθ}sin\frac{φ}2|1>$(与密度矩阵及其分解相关，具体内容我也没太弄得明白),其中$θ∈[0,Π]$，$φ∈[0,2Π]$，因此我们得到了可以用三维空间的一个点去表达一个态。如下图中的布洛赫球所示，传统的比特只有两端的0和1，而量子比特可以有整个球面上所有的点。
 
-![](https://ai-studio-static-online.cdn.bcebos.com/4611ba06cff94e9ea44330d2a30e5588769a07cd3f2547e2bb5ebb183176b351)
+![image](https://ai-studio-static-online.cdn.bcebos.com/4611ba06cff94e9ea44330d2a30e5588769a07cd3f2547e2bb5ebb183176b351)
 
 ## 量子门
 
@@ -33,9 +33,9 @@ $|φ> = a|0>+b|1>$其中a和b都是复数，满足关系$|a|^2+|b|^2=1$
 
 而CNOT门也是如此，作用于两个量子比特，一个控制量子比特和一个目标量子比特，改变量子比特状态，如下图所示
 
-![](https://ai-studio-static-online.cdn.bcebos.com/333f5b6592a84e46be5efea1513d2b5f4af510aefcf44b8dbef36617105abdb5)
+![image](https://ai-studio-static-online.cdn.bcebos.com/333f5b6592a84e46be5efea1513d2b5f4af510aefcf44b8dbef36617105abdb5)
 
-![](https://ai-studio-static-online.cdn.bcebos.com/ffa265ebc1984834b9542c2722cc694ed398465463bb47e2988fbd5774a11231)
+![image](https://ai-studio-static-online.cdn.bcebos.com/ffa265ebc1984834b9542c2722cc694ed398465463bb47e2988fbd5774a11231)
 
 |00>和|01>中前一个为目标态，后一个为控制态
 可以看到CNOT不会修改"00"的值，因为控制态为0。而控制态等于1的时候会反转目标态，由|01>变为|11>，所以也被称作控制非门，如同计算机中的"非"的操作。
